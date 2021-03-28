@@ -17,5 +17,14 @@ db.get('name', 'data');
 // value
 
 db.push('name', 'words', 'hello');
-// { "name": { "data": "", "words": [ "hello" ] } }
+// { "name": { "data": "value", "words": [ "hello" ] } }
+
+db.delete('name', 'words');
+// { "name": { "data": "value" } }
+
+db.delete('name');
+// {}
+
+db.delete();
+// {}
 ```
