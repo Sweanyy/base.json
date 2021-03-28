@@ -1,2 +1,2 @@
-# 1.0.1
-Fix typings 
+# 1.0.1 (Not released)
+[ ] Fix typings 
