@@ -13,9 +13,9 @@ const db = new DataBase('database/examples.json');
 db.set('name', 'data', 'value');
 // { "name": { "data": "value" } }
 
+db.get('name', 'data');
+// value
+
 db.push('name', 'words', 'hello');
 // { "name": { "data": "", "words": [ "hello" ] } }
-
-db.push('name', 'words', {});
-// { "name": { "data": "", "words": [ "hello", {} ] } }
 ```
