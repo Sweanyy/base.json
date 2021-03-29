@@ -7,12 +7,12 @@ npm install base.json
 ```js
 const { DataBase } = require('base.json');
 
-const db = new DataBase('database/examples.json');
+const db = new DataBase('database/examples.json', { autoSave: false });
 // { "name": { "data": "", "words": [] } }
 
 db.set('name', 'data', 'value');
 db.save();
-// { "name": { "data": "value" } }
+// { "name": { "data": "value", "words : [] } }
 
 db.get('name', 'data');
 db.save();
@@ -34,3 +34,6 @@ db.delete();
 db.save();
 // {}
 ```
+
+# LINKS
+[Discord](https://discord.gg/RKtjmFXZ)
