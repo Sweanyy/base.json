@@ -1,4 +1,4 @@
-# 1.0.1 (Not released)
+# 1.0.1 
 [ X ] Add keywords <br>
 [ X ] Add autoSave <br>
 [ X ] Make DataBase#get(name, data) data field optional <br>
