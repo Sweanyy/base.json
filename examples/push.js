@@ -9,3 +9,4 @@ db.push('push', 'array', 'World');
 // { "push": { "array": ["Hello", "World"] } } 
 
 console.log(db.get('push', 'array').join(' '));
+// Hello World
