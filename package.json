@@ -1,21 +1,31 @@
 {
   "name": "base.json",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A simple library that allow you to create a locale database with JSON.",
   "main": "lib/index.js",
   "types": "typings/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fs": "*"
+    "fs": "*",
+    "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2",
+    "lodash.unset": "^4.5.2"
   },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sweanyy/base.json.git"
   },
   "homepage": "https://github.com/Sweanyy/base.json#readme",
-  "keywords": ["data", "base", "database", "db", "json"]
+  "keywords": [
+    "data",
+    "base",
+    "database",
+    "db",
+    "json"
+  ]
 }

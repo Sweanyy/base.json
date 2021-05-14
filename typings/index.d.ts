@@ -1,18 +1,23 @@
-declare module "base.json" {
-    class DataBase {
-        file: string;
-        options?: object
+declare module "base.json" {  
+        interface DataBaseOptions {};
 
-        public constructor(file: string, options?: object);
-
-        public add(name: string, data: string, value: number): void;
-        public remove(name: string, data: string, value: number): void;
-        public divide(name: string, data: string, value: number): void;
-        public multiply(name: string, data: string, value: number): void;
-        public set(name: string, data: string, value: any): void;
-        public get(name: string, data?: string): any;
-        public push(name: string, data: string, value: any): void;
-        public delete(name?: string, data?: string): void;
-        public save(): void;
-    }
-}
+        class DataBase {
+            file: string;
+            options?: DataBaseOptions
+    
+            public constructor(file: string, options?: DataBaseOptions);
+    
+            public add(key: string, value: number): void;
+            public remove(key: string, value: number): void;
+            public divide(key: string, value: number): void;
+            public multiply(key: string, value: number): void;
+            public modulus(key: string, value: number): void;
+            public set(key: string, value: any): void;
+            public get(key: string): any;
+            public push(key: string, ...values: any): void;
+            public has(key: string): boolean;
+            public delete(...keys?: string): void;
+            private form(method: string, key: string, value?: any): void;
+            private save(): void;
+        }
+};
