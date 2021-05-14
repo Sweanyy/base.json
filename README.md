@@ -32,13 +32,13 @@ db.has('me.weapons');
 ```
 
 # FUNCTIONS
-DataBase.add(key: string, value: number);
-DataBase.remove(key: string, value: number);
-Database.divide(key; string, value: number);
-DataBase.multiply(key: string, value: number);
-DataBase.modulus(key: string, value: number);
-DataBase.set(key: string, value: any);
-DataBase.get(key: string);
-DataBase.push(key: string, ...values: any);
-DataBase.has(key: string);
-DataBase.delete(...keys?: string);
+DataBase.add(key: string, value: number); <br>
+DataBase.remove(key: string, value: number); <br>
+Database.divide(key; string, value: number); <br>
+DataBase.multiply(key: string, value: number); <br>
+DataBase.modulus(key: string, value: number); <br>
+DataBase.set(key: string, value: any); <br>
+DataBase.get(key: string); <br>
+DataBase.push(key: string, ...values: any); <br>
+DataBase.has(key: string); <br>
+DataBase.delete(...keys?: string); <br>
